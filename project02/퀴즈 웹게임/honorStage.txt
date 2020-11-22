@@ -1,0 +1,7 @@
+function processFile(file) {
+    var reader = new FileReader();
+    reader.onload = function () {
+        output.innerText = reader.result;
+    };
+    reader.readAsText(file, /* optional */ "euc-kr");
+}
